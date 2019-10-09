@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 56px;
 
     h1 {
       font-size: 32px;
@@ -13,8 +14,6 @@ export const Container = styled.div`
   }
 
   ul {
-    margin-top: 56px;
-
     li + li {
       margin-top: 10px;
     }

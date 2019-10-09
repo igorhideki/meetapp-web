@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { MdAddCircleOutline, MdChevronRight } from 'react-icons/md';
 import { parseISO, format } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 
+import { selectMeetup } from '~/store/modules/meetup/actions';
 import api from '~/services/api';
 import history from '~/services/history';
 
@@ -11,6 +13,7 @@ import { Button } from '~/styles/button';
 
 export default function SignIn() {
   const [meetups, setMeetups] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     async function loadMeetups() {
@@ -31,7 +34,8 @@ export default function SignIn() {
     loadMeetups();
   }, []);
 
-  function handleDetails() {
+  function handleDetails(meetup) {
+    dispatch(selectMeetup(meetup));
     history.push('/details');
   }
 
