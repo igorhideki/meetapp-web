@@ -27,22 +27,6 @@ export const Content = styled.div`
   aside {
     display: flex;
     align-items: center;
-
-    button {
-      background: #d44059;
-      border: 0;
-      color: #fff;
-      font-weight: bold;
-      padding: 0 20px;
-      height: 42px;
-      border-radius: 4px;
-      font-size: 16px;
-      transition: background 0.2s;
-
-      &:hover {
-        background: ${darken(0.05, '#D44059')};
-      }
-    }
   }
 `;
 

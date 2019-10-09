@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { Container, Content, Profile } from './styles';
+import { Button } from '~/styles/button';
 import logo from '~/assets/logo.svg';
 
 export default function Header() {
@@ -22,7 +23,7 @@ export default function Header() {
             <strong>{profile.name}</strong>
             <Link to="/profile">Meu perfil</Link>
           </Profile>
-          <button type="button">Sair</button>
+          <Button danger>Sair</Button>
         </aside>
       </Content>
     </Container>
