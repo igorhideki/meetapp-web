@@ -4,3 +4,10 @@ export function selectMeetup(meetup) {
     payload: { meetup },
   };
 }
+
+export function clearMeetupSelected(meetup) {
+  return {
+    type: '@meetup/RESET',
+    payload: { meetup },
+  };
+}
