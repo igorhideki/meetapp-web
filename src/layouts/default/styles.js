@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   padding: 0 30px;
+  overflow: auto;
 `;
 
 export const Content = styled.div`
