@@ -12,7 +12,7 @@ import history from '~/services/history';
 import BannerInput from '~/components/BannerInput';
 import DatePicker from '~/components/Datepicker';
 import { Button } from '~/styles/button';
-import { Container } from './styles';
+import { FormWrapper } from '~/styles/formWrapper';
 
 const schema = Yup.object().shape({
   banner_id: Yup.number().required('O banner é obrigatório'),
@@ -46,7 +46,7 @@ export default function MeetupForm() {
   }
 
   return (
-    <Container>
+    <FormWrapper>
       <Form
         initialData={meetupFormatted}
         onSubmit={handleSubmit}
@@ -73,6 +73,6 @@ export default function MeetupForm() {
           Salvar meetup
         </Button>
       </Form>
-    </Container>
+    </FormWrapper>
   );
 }

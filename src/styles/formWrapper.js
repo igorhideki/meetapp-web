@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const FormWrapper = styled.div`
   form {
     margin-top: 50px;
     display: flex;
@@ -43,6 +43,13 @@ export const Container = styled.div`
     > button {
       margin-top: 20px;
       margin-left: auto;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px 0;
     }
   }
 `;
