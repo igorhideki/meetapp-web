@@ -29,6 +29,11 @@ export const FormWrapper = styled.div`
       &::placeholder {
         color: rgba(255, 255, 255, 0.5);
       }
+
+      &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
     }
 
     span {
