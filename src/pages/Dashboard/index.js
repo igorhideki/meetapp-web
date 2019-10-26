@@ -27,7 +27,6 @@ export default function SignIn() {
           }),
         };
       });
-      console.tron.log(data);
       setMeetups(data);
     }
 
