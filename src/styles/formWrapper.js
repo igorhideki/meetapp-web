@@ -31,7 +31,8 @@ export const FormWrapper = styled.div`
       }
 
       &:disabled {
-        opacity: 0.7;
+        background: rgba(255, 255, 255, 0.1);
+        opacity: 0.6;
         cursor: not-allowed;
       }
     }
