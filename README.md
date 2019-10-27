@@ -20,3 +20,14 @@ Para executar a aplicação localmente é necessário ter instalado na máquina 
 2. Execute o comando `yarn install` para instalar as dependências do projeto
 
 3. Execute o comando `yarn start` para subir o projeto localmente, ele está configurando para abrir em http://localhost:3000
+
+
+## Funcionalidades
+
+Abaixo estão as funcionalidades da aplicação.
+
+* Autenticação de usuário
+* Cadastro de usuário
+* Listagem de meetups que o usuário organiza
+* Visualização, edição e exclusão de meetups
+* Visualização e edição do perfil do usuário
