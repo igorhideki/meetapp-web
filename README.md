@@ -31,3 +31,8 @@ Abaixo estão as funcionalidades da aplicação.
 * Listagem de meetups que o usuário organiza
 * Visualização, edição e exclusão de meetups
 * Visualização e edição do perfil do usuário
+
+## Links
+
+* [Meetapp API](https://github.com/igorhideki/meetapp-api)
+* [Meetapp Mobile](https://github.com/igorhideki/meetapp-mobile)
